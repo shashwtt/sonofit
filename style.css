@@ -199,7 +199,6 @@ main .access .inner {
   cursor: pointer;
   background-color: #133d92;
   font-weight: 700;
-  /* BOttom shadow */
   box-shadow: 0 10px 10px 1px #1114;
 }
 
@@ -240,7 +239,6 @@ main .access .inner {
 }
 
 
-/* MAKE THE WEBSITE RESPONSIVE */
 
 @media only screen and (max-width: 1400px) {
   header .inner {
@@ -325,7 +323,9 @@ main .access .inner {
   header .options {
     display: none;
   }
-  /* Reduce the paddings  */
+  header {
+    height: 80px;
+  }
   main .content .inner {
     padding: 0 20px;
   }
