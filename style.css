@@ -17,11 +17,9 @@ img {
 
 header {
   width: 100vw;
-  height: 10vh;
-  min-height: 100px;
   background-color: #282727;
   color: #eee;
-  max-height: 120px;
+  height: 100px;
   display: flex;
   justify-content: center;
   user-select: none;
@@ -324,7 +322,7 @@ main .access .inner {
     display: none;
   }
   header {
-    height: 80px;
+    height: 80px !important;
   }
   main .content .inner {
     padding: 0 20px;
