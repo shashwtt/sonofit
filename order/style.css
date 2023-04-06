@@ -166,77 +166,77 @@ footer h3 {
   font-weight: 500;
 }
 
-.access {
+.review {
   padding: 30px 100px;
+  display: flex;
+  justify-content: center;
+  color: #444;
 }
 
-main .access .inner {
+main .review .inner {
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1em;
+  max-width: 1200px;
+}
+
+.review h1 {
   text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0em;
+  margin-top: 1em;
 }
 
-.access h1 {
-  font-size: 2.5em;
-  font-weight: 400;
+.review b {
+  font-weight: 800;
+  columns: #333;
 }
 
-.jump {
-  color: white;
-  padding: 0.5em 1.5em;
-  font-size: 2.6em;
-  border-radius: 60px;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-  animation: bounce 1.5s infinite;
-  cursor: pointer;
-  background-color: #133d92;
-  font-weight: 700;
-  box-shadow: 0 10px 10px 1px #1114;
-}
-
-.jump:hover {
-  background-color: #092e79;
-}
-
-@keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-}
-
-.links {
-  font-size: 1.3em;
-  color: #5d5d5d;
+.review p {
+  font-size: 1.4rem;
   font-weight: 500;
+  scale: 1 1.1;
 }
 
-.links span {
+.review ul, .review ol {
+  padding: 2em 0 1.5em 3em;
+}
+
+.review ul li, .review ol li {
+  font-size: 1.4rem;
   font-weight: 500;
-  cursor: pointer;
-  color: #188bf6;
+  margin-bottom: 0.4em;
+  padding-bottom: 2em;
+  position: relative;
 }
 
-.links span:hover {
+.review ol li::after  {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -1em;
+  width: 100%;
+  border-bottom: 2px solid #1114;
+}
+
+.review h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1em;
+  margin-top: 2em;
+}
+
+.review a {
+  color: #27598e;
   text-decoration: underline;
 }
 
-
+.buy {
+  width: 100%;
+  height: auto;
+  scale: 1 0.9;
+  margin-top: 1em;
+}
 
 @media only screen and (max-width: 1400px) {
   header .inner {
@@ -254,7 +254,7 @@ main .access .inner {
   footer {
     padding: 20px 50px;
   }
-  .access {
+  .review {
     padding: 30px 50px;
   }
   .jump {
@@ -272,7 +272,7 @@ main .access .inner {
   footer {
     padding: 20px 30px;
   }
-  .access {
+  .review {
     padding: 30px 30px;
   }
   .jump {
@@ -330,7 +330,7 @@ main .access .inner {
   footer {
     padding: 20px 20px;
   }
-  .access {
+  .review {
     padding: 30px 20px;
   }
   main .content .data {
