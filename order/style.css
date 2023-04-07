@@ -72,16 +72,21 @@ header #order {
   outline: none;
   border: none;
   border-radius: 2px;
-  padding: 0.7em 1em;
+  padding: 0.55em 1em;
   font-size: 1.3em;
   font-weight: 700;
   color: #fff;
   margin-left: 2em;
+  border-radius: 10px ;
+  border: 3px solid transparent;
+  transition: 0.3s ease;
 }
 
 header #order:hover {
-  background-color: #07bba0;
+  background-color: #133544;
+  color: #00d1b2;
   cursor: pointer;
+  border: 3px solid #00d1b2;
 }
 
 main {
